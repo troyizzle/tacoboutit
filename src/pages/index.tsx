@@ -1,6 +1,4 @@
-import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
-
 import { api } from "~/utils/api";
 
 export default function Home() {
@@ -12,6 +10,13 @@ export default function Home() {
         <title>♥ Fanny & Troy ♥</title>
         <meta name="description" content="Fanny & Troy's Favorite Taco Locations" />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Fanny & Troy's Favorite Taco Locations" />
+        <meta property="og:description" content="The favorite taco locations." />
+        <meta
+          property="og:image"
+          content="/images/poster.png"
+        />
       </Head>
       <main className="mx-auto container max-w-5xl p-4">
         <h1 className="text-5xl font-bold text-center">
